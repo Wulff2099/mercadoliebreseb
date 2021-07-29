@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = 3030
+const port = process.env.PORT || 3000
 const path = require('path')
 
 
@@ -16,6 +16,6 @@ app.get('*', function(request, response) {
     response.send('NOT FOUND', 404)
 })
 
-app.listen(port, () => {
-    console.log('La app esta funcionado en http://localhost:' + port)
+app.listen(port, function() {
+    console.log('Servido corriendo en corriendo en el puerto ' + port  );
 })
