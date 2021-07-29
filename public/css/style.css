@@ -244,7 +244,7 @@
                     margin-top: 20px;
                 }
                 
-                @media (min-width: 630px) {
+                @media (min-width: 576px) {
                     .main-header-top-bar {
                         display: flex;
                     }
